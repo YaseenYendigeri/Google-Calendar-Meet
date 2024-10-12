@@ -77,4 +77,3 @@ The server will be accessible at `http://localhost:3000`.
 - [Sequelize](https://sequelize.org/)
 - [Node.js](https://nodejs.org/)
 
-```
