@@ -1,27 +1,27 @@
 ```markdown
 # Google Calendar API Integration - Backend
 
-This project implements the Google Calendar API to manage calendar events and Google Meet links through a Node.js backend. It provides functionality to create, read, update, and delete calendar events, including integration for Google Meet.
+This project provides a Node.js backend for managing calendar events and Google Meet links using the Google Calendar API. It supports creating, reading, updating, and deleting events.
 
 ## Features
 
-- **User Authentication**: OAuth 2.0 authentication using Google APIs.
-- **Event Management**: CRUD operations for calendar events.
-- **Google Meet Integration**: Automatically generate and manage Google Meet links for events.
+- User authentication with OAuth 2.0
+- CRUD operations for calendar events
+- Integration with Google Meet
 
-## Technologies Used
+## Technologies
 
-- **Backend**: Node.js
-- **Database**: PostgreSQL (using Sequelize ORM)
-- **APIs**: Google Calendar API
+- **Node.js**
+- **PostgreSQL** (with Sequelize ORM)
+- **Google Calendar API**
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js and npm installed on your machine.
-- A Google Cloud Platform (GCP) project with the Google Calendar API enabled.
-- PostgreSQL database set up locally or in the cloud.
+- Node.js and npm
+- Google Cloud Platform project with the Google Calendar API enabled
+- PostgreSQL database
 
 ### Installation
 
@@ -38,9 +38,7 @@ This project implements the Google Calendar API to manage calendar events and Go
    npm install
    ```
 
-3. Set up environment variables:
-
-   Create a `.env` file in the root of the project and add the following variables:
+3. Create a `.env` file in the root directory and add:
 
    ```env
    GOOGLE_CLIENT_ID=your_google_client_id
@@ -51,35 +49,32 @@ This project implements the Google Calendar API to manage calendar events and Go
 
 4. Initialize the database:
 
-   Set up your database schema using Sequelize. If you have migrations, run:
-
    ```bash
    npx sequelize-cli db:migrate
    ```
 
 ### Running the Project
 
-1. Start the server:
+Start the server:
 
-   ```bash
-   npm start
-   ```
+```bash
+npm start
+```
 
-2. The server should now be running and accessible at `http://localhost:3000`.
+The server will be accessible at `http://localhost:3000`.
 
 ### API Endpoints
 
 - **POST /api/events**: Create a new event.
 - **GET /api/events**: Retrieve all events.
-- **GET /api/events/:id**: Get a specific event by ID.
-- **PUT /api/events/:id**: Update an existing event.
+- **GET /api/events/:id**: Get an event by ID.
+- **PUT /api/events/:id**: Update an event.
 - **DELETE /api/events/:id**: Delete an event.
 
-### Acknowledgments
+## Acknowledgments
 
-- [Google Calendar API Documentation](https://developers.google.com/calendar)
-- [Sequelize Documentation](https://sequelize.org/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [Google Calendar API](https://developers.google.com/calendar)
+- [Sequelize](https://sequelize.org/)
+- [Node.js](https://nodejs.org/)
 
 ```
-
